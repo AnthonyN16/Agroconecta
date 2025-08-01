@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgroConecta Pereira</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Nunito', sans-serif; margin: 0; padding: 0; background: #f2f2f2; color: #333; }
+    header { background: #4CAF50; color: white; padding: 2rem 1rem; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+    nav { background: #388E3C; padding: 1rem; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    nav a { color: white; margin: 0 1rem; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+    nav a:hover { color: #c8e6c9; }
+    section { padding: 2rem; background: white; margin: 2rem auto; border-radius: 12px; max-width: 900px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+    footer { background: #2E7D32; color: white; text-align: center; padding: 2rem 1rem; margin-top: 3rem; }
+    .grid, .productos { display: grid; gap: 1.5rem; }
+    .grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+    .productos { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+    .producto { background: #e8f5e9; border-radius: 10px; padding: 1rem; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.2s; }
+    .producto:hover { transform: translateY(-5px); }
+    .producto h3 { margin-top: 0.5rem; font-size: 1.1rem; }
+    .precio { color: #388E3C; font-weight: bold; font-size: 1.2rem; margin-bottom: 0.5rem; }
+    .boton { display: inline-block; margin-top: 0.5rem; padding: 0.5rem 1rem; background: #4CAF50; color: white; border-radius: 6px; text-decoration: none; transition: background 0.3s; }
+    .boton:hover { background: #45a049; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🌱 AgroConecta Pereira</h1>
+  <p>Del campo a tu mesa – Comercio justo, directo y sostenible</p>
+</header>
+
+<nav>
+  <a href="#quienes">¿Quiénes somos?</a>
+  <a href="#productos">Productos</a>
+  <a href="#tienda">Tienda</a>
+  <a href="#funciona">¿Cómo funciona?</a>
+  <a href="#alianzas">Alianzas</a>
+  <a href="#contacto">Contáctanos</a>
+</nav>
+
+<section id="quienes">
+  <h2>¿Quiénes somos?</h2>
+  <p>AgroConecta Pereira nació como una iniciativa de jóvenes emprendedores de la región con el apoyo de la Universidad Tecnológica de Pereira. Nuestro equipo está formado por estudiantes, campesinos y aliados tecnológicos comprometidos con el bienestar rural. Vimos la necesidad de mejorar las condiciones de venta de los productos agrícolas y creamos esta plataforma para unir el campo con la ciudad usando tecnología e innovación.</p>
+</section>
+
+<section id="productos">
+  <h2>Productos del campo</h2>
+  <div class="grid">
+    <div>🍌 Plátano – Ideal para freír o hervir.</div>
+    <div>🥬 Lechuga – Fresca y orgánica, lista para ensalada.</div>
+    <div>🥑 Aguacate – Maduro y cremoso, directo del árbol.</div>
+    <div>🍊 Naranja – Jugosa, rica en vitamina C.</div>
+    <div>🥕 Zanahoria – Dulce y crocante, sin pesticidas.</div>
+    <div>🍓 Fresa – Recolectada el mismo día.</div>
+  </div>
+</section>
+
+<section id="tienda">
+  <h2>🛒 Tienda en línea</h2>
+  <p>Haz tu pedido fácilmente. Recibe en casa productos frescos y a buen precio directamente del agricultor.</p>
+  <div class="productos">
+    <div class="producto">
+      <h3>🍅 Tomate Chonto</h3>
+      <p>Fresco y cultivado sin químicos.</p>
+      <p class="precio">$1.500/kg</p>
+      <a href="https://wa.me/573120000000" class="boton">Pedir</a>
+    </div>
+    <div class="producto">
+      <h3>🍠 Yuca</h3>
+      <p>Lista para cocinar.</p>
+      <p class="precio">$1.200/kg</p>
+      <a href="https://wa.me/573120000000" class="boton">Pedir</a>
+    </div>
+    <div class="producto">
+      <h3>🍍 Piña dulce</h3>
+      <p>Directamente del campo.</p>
+      <p class="precio">$2.000 c/u</p>
+      <a href="https://wa.me/573120000000" class="boton">Pedir</a>
+    </div>
+    <div class="producto">
+      <h3>🥚 Huevos campesinos</h3>
+      <p>Libres de jaula.</p>
+      <p class="precio">$8.000 docena</p>
+      <a href="https://wa.me/573120000000" class="boton">Pedir</a>
+    </div>
+    <div class="producto">
+      <h3>🥔 Papa criolla</h3>
+      <p>Perfecta para freír o cocinar.</p>
+      <p class="precio">$2.200/kg</p>
+      <a href="https://wa.me/573120000000" class="boton">Pedir</a>
+    </div>
+  </div>
+</section>
+
+<section id="funciona">
+  <h2>¿Cómo funciona?</h2>
+  <p>1. Los agricultores publican sus productos en nuestra aplicación móvil o página web.<br>
+     2. Los consumidores hacen sus pedidos en línea.<br>
+     3. En la mañana, nuestro camión recolecta los productos en el campo.<br>
+     4. Los pedidos son entregados el mismo día en toda Pereira.<br>
+     5. Los agricultores reciben pagos justos sin intermediarios.</p>
+</section>
+
+<section id="alianzas">
+  <h2>Alianzas y apoyos</h2>
+  <p>Contamos con el respaldo de la Universidad Tecnológica de Pereira, tiendas locales, el SENA y posibles alianzas con supermercados como Éxito, Ara y Olímpica. También buscamos apoyo de fundaciones como Fundación Alpina y Fundación Carvajal. Si deseas sumarte como aliado, escríbenos y hablemos.</p>
+</section>
+
+<section id="contacto">
+  <h2>Contáctanos</h2>
+  <p>📧 agroconecta@pereira.com<br>
+     📱 +57 312 000 0000<br>
+     📍 Pereira, Risaralda, Colombia</p>
+  <p>
+    <a href="https://www.facebook.com" style="margin-right:10px;">Facebook</a> |
+    <a href="https://www.instagram.com" style="margin-left:10px;">Instagram</a>
+  </p>
+</section>
+
+<footer>
+  <p>&copy; 2025 AgroConecta Pereira. Todos los derechos reservados.</p>
+  <p>Política de privacidad | Términos de uso</p>
+</footer>
+
+</body>
+</html>
